@@ -31,6 +31,10 @@
                 padding: 5px 0px 5px 0px;
                 width: in;
             }
+            ul.info-list{
+                list-style-type: none;
+                list-style-position: inside;
+            }
             h1 a{
                 text-decoration: none;
                 color: black;
@@ -55,9 +59,13 @@
             td.pos{
                 vertical-align: top;
             }
-            div.presentazione{
+            div.info{
                 padding: 0px 10px 0px 1cm;
                 text-align: start right;
+            }
+            li.compinfo{
+                font-size: 15;
+                margin-bottom: 3px;
             }
         </style>
     </head>
@@ -68,16 +76,30 @@
                 <td class="pos">
                     <ul class="menu-list">
                         <li class="selectedlist"><table class="elements"><tr class="list"><td class="selected"></td><td><div href="./info.html" class="sel">Le mie info</div></td></tr></table></li>
-                        <li><table class="elements"><tr class="list"><td class="point-list"></td><td><a href="./city.html">Città</a></td></tr></table></li>
+                        <li><table class="elements"><tr class="list"><td class="point-list"></td><td><a href="./city.html">Citt&agrave;</a></td></tr></table></li>
                         <li><table class="elements"><tr class="list"><td class="point-list"></td><td><a href="./bio.html">Bio</a></td></tr></table></li>
                         <li><table class="elements"><tr class="list"><td class="point-list"></td><td><a href="./contacts.html">Contatti</a></td></tr></table></li>
                     </ul>
                 </td>
                 <td class="pos">
-                    <div class="presentazione">
-                    Questo è il primo esercizio di front-end.<br>
-                    Prima pagina web realizzata in HTML dal sottoscritto, Manuel Parra Rodriguez, a scopo dimostrativo.<br>
-                    Negli indici, ci sono altre pagine che presentano me: chi sono, cosa dovete sapere, da dove vengo e i contatti.
+                    <div class="info">
+                        <table>
+                            <tr>
+                                <td class="pos"><img src="./image.jpg" alt="" height="180px" style="padding-left: 0.5cm; padding-right: 0.5cm"></td>
+                                <td class="pos">
+                                    <ul class="info-list">
+                                        <li style="font-weight: 600; text-align: center;">Manuel</li>
+                                        <li style="margin-top: 4px; font-weight: 600; text-align: center">Parra Rodriguez</li>
+                                        <li style="font-size: 13; margin: 5px 0px 7px 0px; text-align: center">    <i>"Studente"</i></li>
+                                        <li class="compinfo"><b>Et&agrave;: </b> 19 anni</li>
+                                        <li class="compinfo"><b>Citt&agrave;: </b> <a href="./city.html" style="text-decoration: none; color:blue">Cinisello Balsamo</a></li>
+                                        <li class="compinfo"><b>Eseperienze: </b> Progetto di sviluppo web app per la maturit&agrave;</li>
+                                        <li class="compinfo"><b>Livello: </b> Intermedio</li>
+                                        <li style="font-size: 16;">(<i>Node.js, Hosting web Linux/Apache</i>)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </td>
             </tr>
